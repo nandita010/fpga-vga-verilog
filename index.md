@@ -6,20 +6,25 @@ categories: demo
 ---
 
 Add a short welcome message or introduction here. Aim to get the viewer interested in what follows! Guideline: 1 or 2 sentences. 
-Hello this project is based on FPGA Board
+Hello this project is based on the Basys- 3 FPGA Board. I was able to create a VGA with template code of colorful stripes and a project I am currently designing.
 I am adding a test sentence here at 13:24 on 03/12/24.
 
 ## **Template VGA Design**
+19/10/2026
 ### **Project Set-Up**
 Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
 
 
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
+
+- The structure of the Verilog code contained each columns with the designated stripes of each color. Each were 80 pixels. I put the testbench and other files within the correct directory in Vivado for the code to execute properly.
 ### **Simulation**
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
+The simulation has a lot of blue, red and green lines but overall the green seems pretty consistent. It shows that the code is working fine with a few errors for the red line and blue line for...
 ### **Synthesis**
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
+Synthesis shows what parts of the physical FPGA board is working
 ### **Demonstration**
 <img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/WhatsApp Image 2026-10-19 at 15.27.09.jpeg">.
 
