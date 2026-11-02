@@ -18,20 +18,27 @@ Summarise the project set-up and design flow. Include a screenshot of your own s
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
 <img src="https://github.com/nandita010/fpga-vga-verilog/blob/main/docs/assets/images/Stripes.jpeg?raw=true">
-- The structure of the Verilog code contained each columns with the designated stripes of each color. Each were 80 pixels. I put the testbench and other files within the correct directory in Vivado for the code to execute properly.
+<img src="https://github.com/nandita010/fpga-vga-verilog/blob/main/docs/assets/images/Red%20Background.jpeg?raw=true">
+- The structure of the Verilog code contained each columns with the designated stripes of each color. Each were 80 pixels. I put the testbench and other files within the correct directory in Vivado for the code to execute properly. VGA works through a HDMI cable connected from the BASYS 3 chip directly to the 2nd display of computer. In Vivado, when Open Hardware Manager is run, I clicked Open Target and then Program Device. This connected the code through the chip back to the 2nd display.
 ### **Simulation**
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
+
 The simulation has a lot of blue, red and green lines but overall the green seems pretty consistent. It shows that the code is working fine with a few errors for the red line and blue line for...
+
+<img src="https://github.com/nandita010/fpga-vga-verilog/blob/main/docs/assets/images/TempCode.png?raw=true">
+
 ### **Synthesis**
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
 Synthesis shows what parts of the physical FPGA board is working
+<img src="https://github.com/nandita010/fpga-vga-verilog/blob/main/docs/assets/images/Synthesis.png?raw=true">
 ### **Demonstration**
 <img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/WhatsApp Image 2026-10-19 at 15.27.09.jpeg">.
-
 ## **My VGA Design Edit**
 Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
+For my VGA Design Edit I will be doing pink polka dots scattered/ in a pattern on a colored screen. This is a bit complex as I need to find the formula of a circle and integrate that into the code. I need to determine the number and colors of circles within the display, how to scatter them/have them in a pattern (most likely diagonally). I also need to solve any bugs while encountering this code. Research details:
 ### **Code Adaptation**
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
+
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
 ### **Synthesis**
@@ -54,5 +61,5 @@ A bullet list can be rendered as follows:
 - iterators
 
 Images can be added by uploading them to the repository in a /docs/assets/images folder, and then rendering using HTML via githubusercontent.com as shown in the example below.
-
+<img src= >
 <img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSrcs.png">
