@@ -17,7 +17,7 @@ Summarise the project set-up and design flow. Include a screenshot of your own s
 
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
-
+<img src="https://github.com/nandita010/fpga-vga-verilog/blob/main/docs/assets/images/Stripes.jpeg?raw=true">
 - The structure of the Verilog code contained each columns with the designated stripes of each color. Each were 80 pixels. I put the testbench and other files within the correct directory in Vivado for the code to execute properly.
 ### **Simulation**
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
