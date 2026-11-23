@@ -19,6 +19,7 @@ Summarise the project set-up and design flow. Include a screenshot of your own s
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
 <img src="https://github.com/nandita010/fpga-vga-verilog/blob/main/docs/assets/images/Stripes.jpeg?raw=true">
 <img src="https://github.com/nandita010/fpga-vga-verilog/blob/main/docs/assets/images/Red%20Background.jpeg?raw=true">
+<img src="https://github.com/nandita010/fpga-vga-verilog/blob/9b9b9080a8b49b3c16221c829111fbe7e859204a/docs/assets/images/WhatsApp%20Image%202026-11-23%20at%2015.39.25.jpeg">
 - The structure of the Verilog code contained each columns with the designated stripes of each color. Each were 80 pixels. I put the testbench and other files within the correct directory in Vivado for the code to execute properly. VGA works through a HDMI cable connected from the BASYS 3 chip directly to the 2nd display of computer. In Vivado, when Open Hardware Manager is run, I clicked Open Target and then Program Device. This connected the code through the chip back to the 2nd display.
 ### **Simulation**
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
@@ -29,7 +30,7 @@ The simulation has a lot of blue, red and green lines but overall the green seem
 
 ### **Synthesis**
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
-Synthesis shows what parts of the physical FPGA board is working. **The cyan blocks which are also dsp blocks seen in this picture uses the formula dx*dx + dy*dy which makes up to formula of the circle**
+Synthesis shows what parts of the physical FPGA board is working. The cyan blocks which are also dsp blocks seen in this picture uses the formula dx*dx + dy*dy which makes up to formula of the circle.
 <img src="https://github.com/nandita010/fpga-vga-verilog/blob/main/docs/assets/images/Synthesis.png?raw=true">
 <img src="https://github.com/nandita010/fpga-vga-verilog/blob/b8b966f32fb38ceafcc169984a3b358cf59a1e0f/docs/assets/images/Cyan%20Blocks.png">
 ### **Demonstration**
@@ -39,7 +40,7 @@ Introduce your own design idea. Consider how complex/achievabble this might be o
 For my VGA Design Edit I will be doing pink polka dots scattered/ in a pattern on a colored screen. This is a bit complex as I need to find the formula of a circle and integrate that into the code. I need to determine the number and colors of circles within the display, how to scatter them/have them in a pattern (most likely diagonally). I also need to solve any bugs while encountering this code. Research details:
 ### **Code Adaptation**
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
-
+I used the VGAColourCycleSourceCode template to make multiple polka dots from the template.
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
 ### **Synthesis**
