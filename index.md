@@ -47,7 +47,7 @@ Show how you simulated your own design. Are there any things to note? Demonstrat
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
-
+<img src="https://github.com/nandita010/fpga-vga-verilog/blob/785134fea95821f232c6de4462106c2b1a1d7328/docs/assets/images/WhatsApp%20Image%202026-11-16%20at%2017.04.25.jpeg">
 ## **More Markdown Basics**
 This is a paragraph. Add an empty line to start a new paragraph.
 
