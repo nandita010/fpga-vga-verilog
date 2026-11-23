@@ -5,9 +5,7 @@ tags: fpga vga verilog
 categories: demo
 ---
 
-Add a short welcome message or introduction here. Aim to get the viewer interested in what follows! Guideline: 1 or 2 sentences. 
-Hello this project is based on the Basys- 3 FPGA Board. I was able to create a VGA with template code of colorful stripes and a project I am currently designing.
-I am adding a test sentence here at 13:24 on 03/12/24.
+Hello, my name is Nandita and this project is based on the Basys- 3 FPGA Board. I was able to create 9 pink polka dots scattered across the screen with the help of the templates.
 
 ## **Template VGA Design**
 19/10/2026
@@ -41,9 +39,13 @@ Introduce your own design idea. Consider how complex/achievabble this might be o
 For my VGA Design Edit I will be doing pink polka dots scattered/ in a pattern on a colored screen. This is a bit complex as I need to find the formula of a circle and integrate that into the code. I need to determine the number and colors of circles within the display, how to scatter them/have them in a pattern (most likely diagonally). I also need to solve any bugs while encountering this code. Research details:
 ### **Code Adaptation**
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
-I used the VGAColourCycleSourceCode template to make multiple pink polka dots across the screen. Although the file name is VGAColourStripes, this is where my adapted code lies. I changed the color of the dots from the template by making red_next   = 4'h0; and blue_next  = 4'h0; since this can change the color to pink and making  green_next = 4'h0; since green is not needed to make pink and for the black background, I made red_next   = 4'h0, green_next = 4'h0 and blue_next  = 4'h0.  knew I could change the size of the circle smaller or bigger by changing the distance between one point to the other in the circle so in the code I chose to put distance_sq <= 2500. I assigned multiple **signed wires**. On the 640 by 480 screen, I knew I could position the  to position each circle in the screen I changed dx = col - 320 and dy = row - 240 also while assigning the same formula dx1 * dx1 + dy1 * dy1 to each circle.
+I used the VGAColourCycleSourceCode template to make multiple pink polka dots across the screen. Although the file name is VGAColourStripes, this is where my adapted code lies. I changed the color of the dots from the template by making `red_next   = 4'h0;` and `blue_next  = 4'h0;` since this can change the color to pink and making  `green_next = 4'h0;` since green is not needed to make pink and for the black background, I made red_next   = 4'h0, green_next = 4'h0 and blue_next  = 4'h0.  knew I could change the size of the circle smaller or bigger by changing the distance between one point to the other in the circle so in the code I chose to put `distance_sq <= 2500`. I assigned multiple **signed wires**. On the 640 by 480 screen, I knew I could position the  to position each circle in the screen I changed `dx = col - 320` and `dy = row - 240` also while assigning the same formula `dx1 * dx1 + dy1 * dy1` to each circle.
+
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
+In Vivado, I clicked Simulation -> Run Simulation -> Run Behavioral simulation. This simulation uses the code in the testbench.v to show that the clock and reset is working.
+<img src="https://github.com/nandita010/fpga-vga-verilog/blob/a1f5e87530601251a5a6054eb04414e8332d2da0/docs/assets/images/Screenshot%202026-11-23%20165130.png">
+<img src="https://github.com/nandita010/fpga-vga-verilog/blob/a1f5e87530601251a5a6054eb04414e8332d2da0/docs/assets/images/Screenshot%202026-11-23%20165527.png">
 ### **Synthesis**
  The cyan blocks which are also dsp blocks seen in this picture uses the formula dx*dx + dy*dy which makes up to formula of the circle. DSP blocks take care of the multiplication and adding in the formula. 
 <img src="https://github.com/nandita010/fpga-vga-verilog/blob/b8b966f32fb38ceafcc169984a3b358cf59a1e0f/docs/assets/images/Cyan%20Blocks.png">
@@ -51,6 +53,7 @@ Show how you simulated your own design. Are there any things to note? Demonstrat
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
+This picture shows the 9 polka dots scattered across the screen on a black background. I connected the board to the second display of the computer with a HDMI cable. A USB cable is connected to the board to power up the board
 <img src="https://github.com/nandita010/fpga-vga-verilog/blob/785134fea95821f232c6de4462106c2b1a1d7328/docs/assets/images/WhatsApp%20Image%202026-11-16%20at%2017.04.25.jpeg">
 ## **More Markdown Basics**
 This is a paragraph. Add an empty line to start a new paragraph.
@@ -65,7 +68,3 @@ A bullet list can be rendered as follows:
 - vectors
 - algorithms
 - iterators
-
-Images can be added by uploading them to the repository in a /docs/assets/images folder, and then rendering using HTML via githubusercontent.com as shown in the example below.
-<img src= >
-<img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSrcs.png">
