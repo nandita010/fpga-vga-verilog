@@ -32,9 +32,10 @@ The simulation has a lot of blue, red and green lines but overall the green seem
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
 Synthesis shows what parts of the physical FPGA board is working. The cyan blocks which are also dsp blocks seen in this picture uses the formula dx*dx + dy*dy which makes up to formula of the circle.
 <img src="https://github.com/nandita010/fpga-vga-verilog/blob/main/docs/assets/images/Synthesis.png?raw=true">
-<img src="https://github.com/nandita010/fpga-vga-verilog/blob/b8b966f32fb38ceafcc169984a3b358cf59a1e0f/docs/assets/images/Cyan%20Blocks.png">
+
 ### **Demonstration**
 <img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/WhatsApp Image 2026-10-19 at 15.27.09.jpeg">.
+
 ## **My VGA Design Edit**
 Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
 For my VGA Design Edit I will be doing pink polka dots scattered/ in a pattern on a colored screen. This is a bit complex as I need to find the formula of a circle and integrate that into the code. I need to determine the number and colors of circles within the display, how to scatter them/have them in a pattern (most likely diagonally). I also need to solve any bugs while encountering this code. Research details:
@@ -44,6 +45,9 @@ I used the VGAColourCycleSourceCode template to make multiple pink polka dots ac
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
 ### **Synthesis**
+ The cyan blocks which are also dsp blocks seen in this picture uses the formula dx*dx + dy*dy which makes up to formula of the circle. DSP blocks take care of the multiplication and adding in the formula. 
+<img src="https://github.com/nandita010/fpga-vga-verilog/blob/b8b966f32fb38ceafcc169984a3b358cf59a1e0f/docs/assets/images/Cyan%20Blocks.png">
+<img src="https://github.com/nandita010/fpga-vga-verilog/blob/f445e10c6f6460fa81c32ca1627d5e6b60f69b11/docs/assets/images/Screenshot%202026-11-23%20160708.png">
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
