@@ -29,7 +29,7 @@ The simulation has a lot of blue, red and green lines but overall the green seem
 
 ### **Synthesis**
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
-Synthesis shows what parts of the physical FPGA board is working
+Synthesis shows what parts of the physical FPGA board is working. **The cyan blocks seen in this picture uses the formula dx*dx + dy*dy which makes up to formula of the circle**
 <img src="https://github.com/nandita010/fpga-vga-verilog/blob/main/docs/assets/images/Synthesis.png?raw=true">
 ### **Demonstration**
 <img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/WhatsApp Image 2026-10-19 at 15.27.09.jpeg">.
