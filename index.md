@@ -16,7 +16,6 @@ Summarise the project set-up and design flow. Include a screenshot of your own s
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
 <img src="https://github.com/nandita010/fpga-vga-verilog/blob/main/docs/assets/images/Stripes.jpeg?raw=true">
-<img src="https://github.com/nandita010/fpga-vga-verilog/blob/main/docs/assets/images/Red%20Background.jpeg?raw=true">
 <img src="https://github.com/nandita010/fpga-vga-verilog/blob/9b9b9080a8b49b3c16221c829111fbe7e859204a/docs/assets/images/WhatsApp%20Image%202026-11-23%20at%2015.39.25.jpeg">
 - The structure of the Verilog code contained each columns with the designated stripes of each color. Each were 80 pixels. I put the testbench and other files within the correct directory in Vivado for the code to execute properly. VGA works through a HDMI cable connected from the BASYS 3 chip directly to the 2nd display of computer. In Vivado, when Open Hardware Manager is run, I clicked Open Target and then Program Device. This connected the code through the chip back to the 2nd display.
 ### **Simulation**
@@ -32,7 +31,7 @@ Synthesis shows what parts of the physical FPGA board is working. The cyan block
 <img src="https://github.com/nandita010/fpga-vga-verilog/blob/main/docs/assets/images/Synthesis.png?raw=true">
 
 ### **Demonstration**
-<img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/WhatsApp Image 2026-10-19 at 15.27.09.jpeg">.
+<img src="https://github.com/nandita010/fpga-vga-verilog/blob/main/docs/assets/images/Red%20Background.jpeg?raw=true">
 
 ## **My VGA Design Edit**
 Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
